@@ -10,6 +10,7 @@ namespace Stundenplan_Projekt
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Test");
         }
     }
 }
