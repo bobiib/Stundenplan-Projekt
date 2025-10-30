@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|c:\\users\\boris\\documents\\ipt5.1 projekt\\stundenplan-projekt\\stundenplan-projekt\\stundenplan-projekt\\labor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|solutionrelative:stundenplan-projekt\\labor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|c:\\users\\boris\\documents\\ipt5.1 projekt\\stundenplan-projekt\\stundenplan-projekt\\stundenplan-projekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|solutionrelative:stundenplan-projekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "labor.cs",
+              "DocumentMoniker": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\labor.cs",
+              "RelativeDocumentMoniker": "Stundenplan-Projekt\\labor.cs",
+              "ToolTip": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\labor.cs",
+              "RelativeToolTip": "Stundenplan-Projekt\\labor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T08:56:17.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Program.cs",
               "RelativeDocumentMoniker": "Stundenplan-Projekt\\Program.cs",
               "ToolTip": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Program.cs",
               "RelativeToolTip": "Stundenplan-Projekt\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-23T08:38:33.492Z",
               "EditorCaption": ""
