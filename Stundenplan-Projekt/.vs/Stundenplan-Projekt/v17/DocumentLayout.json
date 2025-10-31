@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|c:\\users\\boris\\documents\\ipt5.1 projekt\\stundenplan-projekt\\stundenplan-projekt\\stundenplan-projekt\\verfuegbarkeit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|solutionrelative:stundenplan-projekt\\verfuegbarkeit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|c:\\users\\boris\\documents\\ipt5.1 projekt\\stundenplan-projekt\\stundenplan-projekt\\stundenplan-projekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|solutionrelative:stundenplan-projekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|c:\\users\\boris\\documents\\ipt5.1 projekt\\stundenplan-projekt\\stundenplan-projekt\\stundenplan-projekt\\fach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|solutionrelative:stundenplan-projekt\\fach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|c:\\users\\boris\\documents\\ipt5.1 projekt\\stundenplan-projekt\\stundenplan-projekt\\stundenplan-projekt\\stundenplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|solutionrelative:stundenplan-projekt\\stundenplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|c:\\users\\boris\\documents\\ipt5.1 projekt\\stundenplan-projekt\\stundenplan-projekt\\stundenplan-projekt\\lehrperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|solutionrelative:stundenplan-projekt\\lehrperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|c:\\users\\boris\\documents\\ipt5.1 projekt\\stundenplan-projekt\\stundenplan-projekt\\stundenplan-projekt\\schueler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\stundenplan-projekt\\schueler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|solutionrelative:stundenplan-projekt\\schueler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|c:\\users\\boris\\documents\\ipt5.1 projekt\\stundenplan-projekt\\stundenplan-projekt\\stundenplan-projekt\\raum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\stundenplan-projekt\\raum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|solutionrelative:stundenplan-projekt\\raum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\stundenplan-projekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|solutionrelative:stundenplan-projekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\stundenplan-projekt\\lehrperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|solutionrelative:stundenplan-projekt\\lehrperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\stundenplan-projekt\\stundenplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|solutionrelative:stundenplan-projekt\\stundenplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\stundenplan-projekt\\verfuegbarkeit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|solutionrelative:stundenplan-projekt\\verfuegbarkeit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\stundenplan-projekt\\fach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F292E206-384C-4E7D-9DFB-9404FD2110D3}|Stundenplan-Projekt\\Stundenplan-Projekt.csproj|solutionrelative:stundenplan-projekt\\fach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,24 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Verfuegbarkeit.cs",
-              "DocumentMoniker": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Verfuegbarkeit.cs",
-              "RelativeDocumentMoniker": "Stundenplan-Projekt\\Verfuegbarkeit.cs",
-              "ToolTip": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Verfuegbarkeit.cs",
-              "RelativeToolTip": "Stundenplan-Projekt\\Verfuegbarkeit.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T10:56:35.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Fach.cs",
               "DocumentMoniker": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Fach.cs",
               "RelativeDocumentMoniker": "Stundenplan-Projekt\\Fach.cs",
@@ -63,12 +50,23 @@
               "RelativeToolTip": "Stundenplan-Projekt\\Fach.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T10:55:22.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T10:55:22.49Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "Verfuegbarkeit.cs",
+              "DocumentMoniker": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Verfuegbarkeit.cs",
+              "RelativeDocumentMoniker": "Stundenplan-Projekt\\Verfuegbarkeit.cs",
+              "ToolTip": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Verfuegbarkeit.cs",
+              "RelativeToolTip": "Stundenplan-Projekt\\Verfuegbarkeit.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T10:56:35.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Stundenplan.cs",
               "DocumentMoniker": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan.cs",
               "RelativeDocumentMoniker": "Stundenplan-Projekt\\Stundenplan.cs",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "Stundenplan-Projekt\\Stundenplan.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T10:53:12.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T10:53:12.314Z"
             },
             {
               "$type": "Document",
@@ -89,12 +86,11 @@
               "RelativeToolTip": "Stundenplan-Projekt\\Lehrperson.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAkwCEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T10:50:52.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T10:50:52.354Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Raum.cs",
               "DocumentMoniker": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Raum.cs",
               "RelativeDocumentMoniker": "Stundenplan-Projekt\\Raum.cs",
@@ -102,31 +98,29 @@
               "RelativeToolTip": "Stundenplan-Projekt\\Raum.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T10:42:58.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T10:42:58.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Schueler.cs",
               "DocumentMoniker": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Schueler.cs",
               "RelativeDocumentMoniker": "Stundenplan-Projekt\\Schueler.cs",
               "ToolTip": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Schueler.cs",
               "RelativeToolTip": "Stundenplan-Projekt\\Schueler.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T10:14:46.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T10:14:46.187Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Program.cs",
               "RelativeDocumentMoniker": "Stundenplan-Projekt\\Program.cs",
               "ToolTip": "C:\\Users\\boris\\Documents\\IPT5.1 Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Stundenplan-Projekt\\Program.cs",
               "RelativeToolTip": "Stundenplan-Projekt\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-23T08:38:33.492Z",
               "EditorCaption": ""
