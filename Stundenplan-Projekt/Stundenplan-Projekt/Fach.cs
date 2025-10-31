@@ -21,5 +21,11 @@ namespace Stundenplan_Projekt
         {
             return stundenProWoche;
         }
+
+        public Fach(string name, int StundenProWoche)
+        {
+            Name=name;
+            stundenProWoche = StundenProWoche;
+        }
     }
 }

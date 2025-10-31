@@ -23,6 +23,13 @@ namespace Stundenplan_Projekt
             set { _klasse = value; }
         }
 
+
+        public Schueler(string name, string klasse)
+        {
+            Name = name;
+            Klasse = klasse;
+        }
+
         public string getName()
         {
             return _name;

@@ -23,6 +23,12 @@ namespace Stundenplan_Projekt
             set { _kuerzel = value; }
         }
 
+        public Lehrperson(string name, string kuerzel)
+        {
+            Name = name;
+            Kuerzel = kuerzel;
+        }
+
         public string getName()
         {
             return _name;

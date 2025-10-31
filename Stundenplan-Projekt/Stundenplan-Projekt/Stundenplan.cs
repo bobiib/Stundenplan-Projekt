@@ -22,7 +22,13 @@ namespace Stundenplan_Projekt
             get { return _date; }
             set { _date = value; }
         }
+        
 
+        public Stundenplan(int woche, DateTime date)
+        {
+            Woche = woche;
+            Date = date;
+        }
 
         public void generierePlan()
         {
