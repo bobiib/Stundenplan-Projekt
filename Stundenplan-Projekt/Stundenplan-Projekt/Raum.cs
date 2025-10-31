@@ -23,11 +23,17 @@ namespace Stundenplan_Projekt
             set { _kapazitaet = value; }
         }
 
+        public Raum(string nummer, int kapazitaet)
+        {
+            Nummer = nummer;
+            Kapazitaet = kapazitaet;
+        }
+
         public string getNummer()
         {
             return _nummer;
         }
-       public int getKapazitaet()
+        public int getKapazitaet()
         {
             return _kapazitaet;
         }
