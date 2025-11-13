@@ -9,7 +9,7 @@ namespace Stundenplan_Projekt
     internal class Fach
     {
         private string _name;
-        private int stundenProWoche;
+        private int _stundenProWoche;
 
         public string Name
         {
@@ -17,15 +17,17 @@ namespace Stundenplan_Projekt
             set { _name = value; }
         }
 
-        public int getStundenProWoche()
+        public int StundenProWoche
         {
-            return stundenProWoche;
+            get { return _stundenProWoche; }
+            set { _stundenProWoche = value; }
         }
 
-        public Fach(string name, int StundenProWoche)
+
+        public Fach(string name, int stundenProWoche)
         {
-            Name=name;
-            stundenProWoche = StundenProWoche;
+            Name = name;
+            StundenProWoche = stundenProWoche;
         }
     }
 }

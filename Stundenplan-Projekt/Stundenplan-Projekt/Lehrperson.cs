@@ -10,6 +10,8 @@ namespace Stundenplan_Projekt
     {
         private string _name;
         private string _kuerzel;
+        private List<Fach> _faecher = new List<Fach>();
+
 
         public string Name
         {
@@ -29,14 +31,14 @@ namespace Stundenplan_Projekt
             Kuerzel = kuerzel;
         }
 
-        public string getName()
+        public List<Fach> Faecher
         {
-            return _name;
+            get { return _faecher; }
         }
 
-        public string getKuerzel()
+        public void fuegeFachHinzu(Fach fach)
         {
-            return _kuerzel;
+            _faecher.Add(fach);
         }
     }
 }
