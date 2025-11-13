@@ -1,39 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Stundenplan_Projekt
 {
     internal class Verfuegbarkeit
     {
-        private string _tag;
-        private string _zeitVon;
-        private string _zeitBis;
+        public string Tag { get; set; }
+        public string ZeitVon { get; set; }
+        public string ZeitBis { get; set; }
 
-        public string Tag
+        public Verfuegbarkeit(string tag, string zeitVon, string zeitBis)
         {
-            get { return _tag; }
-            set { _tag = value; }
+            Tag = tag;
+            ZeitVon = zeitVon;
+            ZeitBis = zeitBis;
         }
 
-        public string ZeitVon
+        public bool istVerfuegbar(string tag, string zeitVon, string zeitBis)
         {
-            get { return _zeitVon; }
-            set { _zeitVon = value; }
-        }
+            if (Tag.Equals(tag, StringComparison.OrdinalIgnoreCase))
+            {
+                TimeSpan start = TimeSpan.Parse(ZeitVon);
+                TimeSpan ende = TimeSpan.Parse(ZeitBis);
+                TimeSpan pruefStart = TimeSpan.Parse(zeitVon);
+                TimeSpan pruefEnde = TimeSpan.Parse(zeitBis);
 
-        public string ZeitBis
-        {
-            get { return _zeitBis; }
-            set { _zeitBis = value; }
-        }
-
-        public bool istVerfuegbar(string Tag, string ZeitVon, string ZeitBis)
-        {
-         
+                return (pruefStart >= start && pruefEnde <= ende);
+            }
+            return false;
         }
     }
 }

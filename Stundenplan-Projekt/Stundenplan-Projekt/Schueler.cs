@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Stundenplan_Projekt
 {
@@ -10,6 +7,7 @@ namespace Stundenplan_Projekt
     {
         private string _name;
         private string _klasse;
+        private List<Fach> _faecher = new List<Fach>();
 
         public string Name
         {
@@ -23,6 +21,10 @@ namespace Stundenplan_Projekt
             set { _klasse = value; }
         }
 
+        public List<Fach> Faecher
+        {
+            get { return _faecher; }
+        }
 
         public Schueler(string name, string klasse)
         {
@@ -30,13 +32,9 @@ namespace Stundenplan_Projekt
             Klasse = klasse;
         }
 
-        public string getName()
+        public void fuegeFachHinzu(Fach fach)
         {
-            return _name;
-        }
-        public string getKlasse()
-        {
-            return _klasse;
+            _faecher.Add(fach);
         }
     }
 }
