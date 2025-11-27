@@ -200,6 +200,110 @@
       ],
       "Name": "Dmytro",
       "Kuerzel": "Dim"
+    },
+    {
+      "Faecher": [
+        "English",
+        "Informatik",
+        "Chemie"
+      ],
+      "Verfuegbarkeiten": [
+        {
+          "Tag": "Montag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Dienstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Mittwoch",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Donnerstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Freitag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        }
+      ],
+      "Name": "Fabarabadaba",
+      "Kuerzel": "Faba"
+    },
+    {
+      "Faecher": [],
+      "Verfuegbarkeiten": [
+        {
+          "Tag": "Montag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Dienstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Mittwoch",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Donnerstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Freitag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        }
+      ],
+      "Name": "",
+      "Kuerzel": ""
+    },
+    {
+      "Faecher": [
+        "Mathe",
+        "English",
+        "Deutch"
+      ],
+      "Verfuegbarkeiten": [
+        {
+          "Tag": "Montag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Dienstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Mittwoch",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Donnerstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Freitag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        }
+      ],
+      "Name": "Dimitro",
+      "Kuerzel": "Dim"
     }
   ],
   "Raeume": [
@@ -218,6 +322,14 @@
     {
       "Nummer": "Sporthalle",
       "Kapazitaet": 200
+    },
+    {
+      "Nummer": "309",
+      "Kapazitaet": 20
+    },
+    {
+      "Nummer": "928",
+      "Kapazitaet": 29
     }
   ],
   "KlassenNamen": [
