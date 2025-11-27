@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Stundenplan_Projekt
 {
@@ -22,7 +18,6 @@ namespace Stundenplan_Projekt
             get { return _stundenProWoche; }
             set { _stundenProWoche = value; }
         }
-
 
         public Fach(string name, int stundenProWoche)
         {

@@ -1,0 +1,292 @@
+[
+  {
+    "Klasse": "3A",
+    "Fach": "Deutsch",
+    "Lehrer": "Frau Keller",
+    "Raum": "101",
+    "Tag": "Montag",
+    "ZeitVon": "08:50",
+    "ZeitBis": "09:35",
+    "PeriodeIndex": 1
+  },
+  {
+    "Klasse": "3A",
+    "Fach": "Deutsch",
+    "Lehrer": "Frau Keller",
+    "Raum": "101",
+    "Tag": "Montag",
+    "ZeitVon": "09:50",
+    "ZeitBis": "10:35",
+    "PeriodeIndex": 2
+  },
+  {
+    "Klasse": "3A",
+    "Fach": "Mathe",
+    "Lehrer": "Herr Meier",
+    "Raum": "101",
+    "Tag": "Montag",
+    "ZeitVon": "10:40",
+    "ZeitBis": "11:25",
+    "PeriodeIndex": 3
+  },
+  {
+    "Klasse": "3A",
+    "Fach": "Englisch",
+    "Lehrer": "Frau Keller",
+    "Raum": "101",
+    "Tag": "Montag",
+    "ZeitVon": "11:30",
+    "ZeitBis": "12:15",
+    "PeriodeIndex": 4
+  },
+  {
+    "Klasse": "3A",
+    "Fach": "Mathe",
+    "Lehrer": "Herr Meier",
+    "Raum": "101",
+    "Tag": "Dienstag",
+    "ZeitVon": "08:50",
+    "ZeitBis": "09:35",
+    "PeriodeIndex": 1
+  },
+  {
+    "Klasse": "3A",
+    "Fach": "Englisch",
+    "Lehrer": "Frau Keller",
+    "Raum": "101",
+    "Tag": "Mittwoch",
+    "ZeitVon": "08:50",
+    "ZeitBis": "09:35",
+    "PeriodeIndex": 1
+  },
+  {
+    "Klasse": "3A",
+    "Fach": "Deutsch",
+    "Lehrer": "Frau Keller",
+    "Raum": "101",
+    "Tag": "Mittwoch",
+    "ZeitVon": "09:50",
+    "ZeitBis": "10:35",
+    "PeriodeIndex": 2
+  },
+  {
+    "Klasse": "3A",
+    "Fach": "Deutsch",
+    "Lehrer": "Frau Keller",
+    "Raum": "101",
+    "Tag": "Mittwoch",
+    "ZeitVon": "10:40",
+    "ZeitBis": "11:25",
+    "PeriodeIndex": 3
+  },
+  {
+    "Klasse": "3A",
+    "Fach": "Biologie",
+    "Lehrer": "Herr Braun",
+    "Raum": "101",
+    "Tag": "Mittwoch",
+    "ZeitVon": "11:30",
+    "ZeitBis": "12:15",
+    "PeriodeIndex": 4
+  },
+  {
+    "Klasse": "3A",
+    "Fach": "Biologie",
+    "Lehrer": "Herr Braun",
+    "Raum": "101",
+    "Tag": "Mittwoch",
+    "ZeitVon": "13:15",
+    "ZeitBis": "14:00",
+    "PeriodeIndex": 5
+  },
+  {
+    "Klasse": "3A",
+    "Fach": "Mathe",
+    "Lehrer": "Herr Meier",
+    "Raum": "101",
+    "Tag": "Donnerstag",
+    "ZeitVon": "08:50",
+    "ZeitBis": "09:35",
+    "PeriodeIndex": 1
+  },
+  {
+    "Klasse": "3A",
+    "Fach": "Englisch",
+    "Lehrer": "Frau Keller",
+    "Raum": "101",
+    "Tag": "Donnerstag",
+    "ZeitVon": "09:50",
+    "ZeitBis": "10:35",
+    "PeriodeIndex": 2
+  },
+  {
+    "Klasse": "3A",
+    "Fach": "Informatik",
+    "Lehrer": "Herr Meier",
+    "Raum": "101",
+    "Tag": "Donnerstag",
+    "ZeitVon": "10:40",
+    "ZeitBis": "11:25",
+    "PeriodeIndex": 3
+  },
+  {
+    "Klasse": "3A",
+    "Fach": "Informatik",
+    "Lehrer": "Herr Meier",
+    "Raum": "101",
+    "Tag": "Freitag",
+    "ZeitVon": "09:50",
+    "ZeitBis": "10:35",
+    "PeriodeIndex": 2
+  },
+  {
+    "Klasse": "3A",
+    "Fach": "Mathe",
+    "Lehrer": "Herr Meier",
+    "Raum": "101",
+    "Tag": "Freitag",
+    "ZeitVon": "10:40",
+    "ZeitBis": "11:25",
+    "PeriodeIndex": 3
+  },
+  {
+    "Klasse": "3B",
+    "Fach": "Sport",
+    "Lehrer": "Frau Huber",
+    "Raum": "102",
+    "Tag": "Montag",
+    "ZeitVon": "08:50",
+    "ZeitBis": "09:35",
+    "PeriodeIndex": 1
+  },
+  {
+    "Klasse": "3B",
+    "Fach": "Mathe",
+    "Lehrer": "Herr Meier",
+    "Raum": "102",
+    "Tag": "Montag",
+    "ZeitVon": "09:50",
+    "ZeitBis": "10:35",
+    "PeriodeIndex": 2
+  },
+  {
+    "Klasse": "3B",
+    "Fach": "Englisch",
+    "Lehrer": "Frau Huber",
+    "Raum": "102",
+    "Tag": "Dienstag",
+    "ZeitVon": "08:50",
+    "ZeitBis": "09:35",
+    "PeriodeIndex": 1
+  },
+  {
+    "Klasse": "3B",
+    "Fach": "Englisch",
+    "Lehrer": "Frau Huber",
+    "Raum": "101",
+    "Tag": "Dienstag",
+    "ZeitVon": "09:50",
+    "ZeitBis": "10:35",
+    "PeriodeIndex": 2
+  },
+  {
+    "Klasse": "3B",
+    "Fach": "Sport",
+    "Lehrer": "Frau Huber",
+    "Raum": "102",
+    "Tag": "Mittwoch",
+    "ZeitVon": "09:50",
+    "ZeitBis": "10:35",
+    "PeriodeIndex": 2
+  },
+  {
+    "Klasse": "3B",
+    "Fach": "Chemie",
+    "Lehrer": "Herr Braun",
+    "Raum": "102",
+    "Tag": "Mittwoch",
+    "ZeitVon": "10:40",
+    "ZeitBis": "11:25",
+    "PeriodeIndex": 3
+  },
+  {
+    "Klasse": "3B",
+    "Fach": "Deutsch",
+    "Lehrer": "Frau Keller",
+    "Raum": "102",
+    "Tag": "Mittwoch",
+    "ZeitVon": "11:30",
+    "ZeitBis": "12:15",
+    "PeriodeIndex": 4
+  },
+  {
+    "Klasse": "3B",
+    "Fach": "Deutsch",
+    "Lehrer": "Frau Keller",
+    "Raum": "102",
+    "Tag": "Donnerstag",
+    "ZeitVon": "08:50",
+    "ZeitBis": "09:35",
+    "PeriodeIndex": 1
+  },
+  {
+    "Klasse": "3B",
+    "Fach": "Mathe",
+    "Lehrer": "Herr Meier",
+    "Raum": "102",
+    "Tag": "Donnerstag",
+    "ZeitVon": "09:50",
+    "ZeitBis": "10:35",
+    "PeriodeIndex": 2
+  },
+  {
+    "Klasse": "3B",
+    "Fach": "Deutsch",
+    "Lehrer": "Frau Keller",
+    "Raum": "102",
+    "Tag": "Donnerstag",
+    "ZeitVon": "10:40",
+    "ZeitBis": "11:25",
+    "PeriodeIndex": 3
+  },
+  {
+    "Klasse": "3B",
+    "Fach": "Chemie",
+    "Lehrer": "Herr Braun",
+    "Raum": "102",
+    "Tag": "Freitag",
+    "ZeitVon": "09:50",
+    "ZeitBis": "10:35",
+    "PeriodeIndex": 2
+  },
+  {
+    "Klasse": "3B",
+    "Fach": "Deutsch",
+    "Lehrer": "Frau Keller",
+    "Raum": "102",
+    "Tag": "Freitag",
+    "ZeitVon": "10:40",
+    "ZeitBis": "11:25",
+    "PeriodeIndex": 3
+  },
+  {
+    "Klasse": "3B",
+    "Fach": "Mathe",
+    "Lehrer": "Herr Meier",
+    "Raum": "101",
+    "Tag": "Freitag",
+    "ZeitVon": "11:30",
+    "ZeitBis": "12:15",
+    "PeriodeIndex": 4
+  },
+  {
+    "Klasse": "3B",
+    "Fach": "Englisch",
+    "Lehrer": "Frau Keller",
+    "Raum": "101",
+    "Tag": "Freitag",
+    "ZeitVon": "13:15",
+    "ZeitBis": "14:00",
+    "PeriodeIndex": 5
+  }
+]

@@ -1,29 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Stundenplan_Projekt
 {
     internal class Lehrperson
     {
-        private string _name;
-        private string _kuerzel;
-        private List<Fach> _faecher = new List<Fach>();
+        public string Name { get; set; }
+        public string Kuerzel { get; set; }
 
-
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
-
-        public string Kuerzel
-        {
-            get { return _kuerzel; }
-            set { _kuerzel = value; }
-        }
+        // Einfache Listen ohne spezielle "private" Regeln
+        public List<string> Faecher = new List<string>();
+        public List<Verfuegbarkeit> Verfuegbarkeiten = new List<Verfuegbarkeit>();
 
         public Lehrperson(string name, string kuerzel)
         {
@@ -31,14 +17,43 @@ namespace Stundenplan_Projekt
             Kuerzel = kuerzel;
         }
 
-        public List<Fach> Faecher
+        public void AddFach(string fach)
         {
-            get { return _faecher; }
+            if (Faecher.Contains(fach) == false)
+            {
+                Faecher.Add(fach);
+            }
         }
 
-        public void fuegeFachHinzu(Fach fach)
+        public void AddVerfuegbarkeit(string tag, string von, string bis)
         {
-            _faecher.Add(fach);
+            Verfuegbarkeit v = new Verfuegbarkeit(tag, von, bis);
+            Verfuegbarkeiten.Add(v);
+        }
+
+        public bool KannUnterrichten(string fach)
+        {
+            return Faecher.Contains(fach);
+        }
+
+        public bool IstVerfuegbar(string tag, string zeitVon, string zeitBis)
+        {
+            
+            if (Verfuegbarkeiten.Count == 0)
+            {
+                return true;
+            }
+
+            
+            foreach (Verfuegbarkeit v in Verfuegbarkeiten)
+            {
+                if (v.IstInZeitraum(tag, zeitVon, zeitBis))
+                {
+                    return true; 
+                }
+            }
+
+            return false; 
         }
     }
 }

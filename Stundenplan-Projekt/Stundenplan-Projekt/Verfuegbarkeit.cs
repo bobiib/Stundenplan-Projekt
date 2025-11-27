@@ -5,27 +5,33 @@ namespace Stundenplan_Projekt
     internal class Verfuegbarkeit
     {
         public string Tag { get; set; }
-        public string ZeitVon { get; set; }
-        public string ZeitBis { get; set; }
+        public TimeSpan Von { get; set; }
+        public TimeSpan Bis { get; set; }
 
-        public Verfuegbarkeit(string tag, string zeitVon, string zeitBis)
+        public Verfuegbarkeit(string tag, string von, string bis)
         {
             Tag = tag;
-            ZeitVon = zeitVon;
-            ZeitBis = zeitBis;
+            Von = TimeSpan.Parse(von);
+            Bis = TimeSpan.Parse(bis);
         }
 
-        public bool istVerfuegbar(string tag, string zeitVon, string zeitBis)
+        public bool IstInZeitraum(string tag, string zeitStart, string zeitEnde)
         {
-            if (Tag.Equals(tag, StringComparison.OrdinalIgnoreCase))
+            // Wir prüfen, ob der Tag stimmt (Groß/Kleinschreibung egal)
+            if (Tag.ToLower() != tag.ToLower())
             {
-                TimeSpan start = TimeSpan.Parse(ZeitVon);
-                TimeSpan ende = TimeSpan.Parse(ZeitBis);
-                TimeSpan pruefStart = TimeSpan.Parse(zeitVon);
-                TimeSpan pruefEnde = TimeSpan.Parse(zeitBis);
-
-                return (pruefStart >= start && pruefEnde <= ende);
+                return false;
             }
+
+            TimeSpan start = TimeSpan.Parse(zeitStart);
+            TimeSpan ende = TimeSpan.Parse(zeitEnde);
+
+            // Prüfen: Ist der Lehrer ab 'start' da UND bis 'ende' noch da?
+            if (start >= Von && ende <= Bis)
+            {
+                return true;
+            }
+
             return false;
         }
     }
