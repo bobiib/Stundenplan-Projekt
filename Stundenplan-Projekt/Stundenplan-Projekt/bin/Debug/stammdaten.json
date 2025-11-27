@@ -1,0 +1,280 @@
+{
+  "Lehrer": [
+    {
+      "Faecher": [
+        "Mathe",
+        "Informatik"
+      ],
+      "Verfuegbarkeiten": [
+        {
+          "Tag": "Montag",
+          "Von": "08:00:00",
+          "Bis": "12:15:00"
+        },
+        {
+          "Tag": "Dienstag",
+          "Von": "08:00:00",
+          "Bis": "12:15:00"
+        },
+        {
+          "Tag": "Mittwoch",
+          "Von": "08:00:00",
+          "Bis": "12:15:00"
+        },
+        {
+          "Tag": "Donnerstag",
+          "Von": "08:00:00",
+          "Bis": "12:15:00"
+        },
+        {
+          "Tag": "Freitag",
+          "Von": "08:00:00",
+          "Bis": "12:15:00"
+        }
+      ],
+      "Name": "Herr Meier",
+      "Kuerzel": "MEI"
+    },
+    {
+      "Faecher": [
+        "Deutsch",
+        "Englisch"
+      ],
+      "Verfuegbarkeiten": [
+        {
+          "Tag": "Montag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Mittwoch",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Donnerstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Freitag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        }
+      ],
+      "Name": "Frau Keller",
+      "Kuerzel": "KEL"
+    },
+    {
+      "Faecher": [
+        "Biologie",
+        "Chemie"
+      ],
+      "Verfuegbarkeiten": [
+        {
+          "Tag": "Montag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Dienstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Mittwoch",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Donnerstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Freitag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        }
+      ],
+      "Name": "Herr Braun",
+      "Kuerzel": "BRA"
+    },
+    {
+      "Faecher": [
+        "Sport",
+        "Englisch"
+      ],
+      "Verfuegbarkeiten": [
+        {
+          "Tag": "Montag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Dienstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Mittwoch",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Donnerstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Freitag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        }
+      ],
+      "Name": "Frau Huber",
+      "Kuerzel": "HUB"
+    },
+    {
+      "Faecher": [],
+      "Verfuegbarkeiten": [
+        {
+          "Tag": "Montag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Dienstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Mittwoch",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Donnerstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Freitag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        }
+      ],
+      "Name": "Boris Tomovski",
+      "Kuerzel": "BorTom"
+    },
+    {
+      "Faecher": [
+        "Mathe"
+      ],
+      "Verfuegbarkeiten": [
+        {
+          "Tag": "Montag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Dienstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Mittwoch",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Donnerstag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        },
+        {
+          "Tag": "Freitag",
+          "Von": "08:00:00",
+          "Bis": "17:00:00"
+        }
+      ],
+      "Name": "Dmytro",
+      "Kuerzel": "Dim"
+    }
+  ],
+  "Raeume": [
+    {
+      "Nummer": "101",
+      "Kapazitaet": 25
+    },
+    {
+      "Nummer": "102",
+      "Kapazitaet": 25
+    },
+    {
+      "Nummer": "201",
+      "Kapazitaet": 30
+    },
+    {
+      "Nummer": "Sporthalle",
+      "Kapazitaet": 200
+    }
+  ],
+  "KlassenNamen": [
+    "3A",
+    "3B",
+    "D24a"
+  ],
+  "KlassenFaecher": {
+    "3A": [
+      {
+        "Name": "Mathe",
+        "StundenProWoche": 4
+      },
+      {
+        "Name": "Deutsch",
+        "StundenProWoche": 4
+      },
+      {
+        "Name": "Englisch",
+        "StundenProWoche": 3
+      },
+      {
+        "Name": "Informatik",
+        "StundenProWoche": 2
+      },
+      {
+        "Name": "Biologie",
+        "StundenProWoche": 2
+      }
+    ],
+    "3B": [
+      {
+        "Name": "Mathe",
+        "StundenProWoche": 3
+      },
+      {
+        "Name": "Deutsch",
+        "StundenProWoche": 4
+      },
+      {
+        "Name": "Englisch",
+        "StundenProWoche": 3
+      },
+      {
+        "Name": "Chemie",
+        "StundenProWoche": 2
+      },
+      {
+        "Name": "Sport",
+        "StundenProWoche": 2
+      }
+    ],
+    "D24a": [
+      {
+        "Name": "Informatik",
+        "StundenProWoche": 6
+      }
+    ]
+  }
+}

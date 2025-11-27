@@ -1,8 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Stundenplan_Projekt
 {
+    /// <summary>
+    /// Diese Klasse speichert Daten zu einer Klasse oder einem Schüler.
+    /// </summary>
     internal class Schueler
     {
         private string _name;
@@ -32,6 +38,9 @@ namespace Stundenplan_Projekt
             Klasse = klasse;
         }
 
+        /// <summary>
+        /// Fügt ein Fach zur Liste der Fächer hinzu.
+        /// </summary>
         public void fuegeFachHinzu(Fach fach)
         {
             _faecher.Add(fach);
