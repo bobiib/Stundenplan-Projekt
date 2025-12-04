@@ -9,7 +9,7 @@ namespace Stundenplan_Projekt
     /// <summary>
     /// Ein Schulzimmer mit Nummer und Platzanzahl.
     /// </summary>
-    internal class Raum
+    public class Raum
     {
         private string _nummer;
         private int _kapazitaet;

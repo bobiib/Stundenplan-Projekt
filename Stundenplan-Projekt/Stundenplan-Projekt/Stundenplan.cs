@@ -9,7 +9,7 @@ namespace Stundenplan_Projekt
     /// <summary>
     /// Diese Klasse erstellt den Stundenplan und prüft die Regeln.
     /// </summary>
-    internal class Stundenplan
+    public class Stundenplan
     {
         public List<StundenplanEintrag> Eintraege = new List<StundenplanEintrag>();
 
@@ -126,7 +126,8 @@ namespace Stundenplan_Projekt
             SortiereListe();
         }
 
-        private bool IstKlasseBesetzt(string klasse, string tag, int stunde)
+        // WICHTIG: Diese Methoden müssen public sein für die Tests!
+        public bool IstKlasseBesetzt(string klasse, string tag, int stunde)
         {
             foreach (StundenplanEintrag e in Eintraege)
             {
@@ -135,7 +136,7 @@ namespace Stundenplan_Projekt
             return false;
         }
 
-        private bool IstLehrerBesetzt(string name, string tag, int stunde)
+        public bool IstLehrerBesetzt(string name, string tag, int stunde)
         {
             foreach (StundenplanEintrag e in Eintraege)
             {
@@ -144,7 +145,7 @@ namespace Stundenplan_Projekt
             return false;
         }
 
-        private bool IstRaumBesetzt(string nummer, string tag, int stunde)
+        public bool IstRaumBesetzt(string nummer, string tag, int stunde)
         {
             foreach (StundenplanEintrag e in Eintraege)
             {
@@ -156,7 +157,7 @@ namespace Stundenplan_Projekt
         /// <summary>
         /// Berechnet Strafpunkte für ungünstige Termine (Randstunden, Lücken, Raummangel).
         /// </summary>
-        private int BerechnePunkte(string klasse, string tag, int stunde, Planungseinstellungen settings)
+        public int BerechnePunkte(string klasse, string tag, int stunde, Planungseinstellungen settings)
         {
             int punkte = 0;
 

@@ -8,7 +8,7 @@ namespace Stundenplan_Projekt
     /// <summary>
     /// Die Hauptklasse, die das Menü anzeigt und die Benutzereingaben steuert.
     /// </summary>
-    internal class Program
+    public class Program
     {
         // Der Pfad zur Datei, in der wir Lehrer, Räume und Klassen speichern
         static string datenPfad = "stammdaten.json";

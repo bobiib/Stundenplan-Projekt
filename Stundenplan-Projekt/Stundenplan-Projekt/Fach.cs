@@ -9,7 +9,7 @@ namespace Stundenplan_Projekt
     /// <summary>
     /// Stellt ein Unterrichtsfach dar mit Name und Stundenanzahl.
     /// </summary>
-    internal class Fach
+    public class Fach
     {
         private string _name;
         private int _stundenProWoche;

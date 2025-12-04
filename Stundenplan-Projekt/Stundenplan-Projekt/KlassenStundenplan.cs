@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Stundenplan_Projekt
 {
-    internal class KlassenStundenplan
+    public class KlassenStundenplan
     {
         public string KlassenName { get; set; }
         public List<StundenplanEintrag> Eintraege { get; set; } = new List<StundenplanEintrag>();

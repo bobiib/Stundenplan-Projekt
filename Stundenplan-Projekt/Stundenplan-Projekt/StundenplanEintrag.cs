@@ -9,7 +9,7 @@ namespace Stundenplan_Projekt
     /// <summary>
     /// Eine einzelne Stunde im fertigen Stundenplan.
     /// </summary>
-    internal class StundenplanEintrag
+    public class StundenplanEintrag
     {
         public string Klasse { get; set; }
         public string Fach { get; set; }

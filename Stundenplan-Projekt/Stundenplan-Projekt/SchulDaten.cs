@@ -5,7 +5,7 @@ namespace Stundenplan_Projekt
     /// <summary>
     /// Container-Klasse für das Speichern und Laden aller Daten (Lehrer, Räume, Klassen).
     /// </summary>
-    internal class SchulDaten
+    public class SchulDaten
     {
         // Hier speichern wir alles drin
         public List<Lehrperson> Lehrer { get; set; } = new List<Lehrperson>();

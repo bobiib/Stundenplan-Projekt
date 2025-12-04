@@ -9,7 +9,7 @@ namespace Stundenplan_Projekt
     /// <summary>
     /// Speichert die Regeln für die Bewertung des Stundenplans.
     /// </summary>
-    internal class Planungseinstellungen
+    public class Planungseinstellungen
     {
         // Hier speichern wir die Punktzahlen für die Bewertung
         public int StrafeRandstunde;

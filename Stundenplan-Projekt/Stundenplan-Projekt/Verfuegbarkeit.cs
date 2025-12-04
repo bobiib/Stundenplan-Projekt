@@ -9,7 +9,7 @@ namespace Stundenplan_Projekt
     /// <summary>
     /// Definiert einen Zeitrahmen, an dem eine Person verfügbar ist.
     /// </summary>
-    internal class Verfuegbarkeit
+    public class Verfuegbarkeit
     {
         public string Tag { get; set; }
         public TimeSpan Von { get; set; }

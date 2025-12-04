@@ -5,7 +5,7 @@ namespace Stundenplan_Projekt
     /// <summary>
     /// Stellt einen Lehrer dar mit Name, Kürzel und Fächern.
     /// </summary>
-    internal class Lehrperson
+    public class Lehrperson
     {
         public string Name { get; set; }
         public string Kuerzel { get; set; }
