@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CsvExporter.cs" />
+    <Compile Include="IScheduleExporter.cs" />
     <Compile Include="JsonPersistenceService.cs" />
     <Compile Include="IPersistenceService.cs" />
     <Compile Include="StandardEvaluator.cs" />

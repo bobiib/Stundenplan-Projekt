@@ -1,0 +1,36 @@
+﻿Klasse;Tag;Stunde;Fach;Lehrer;Raum
+3A;Montag;10:40;Biologie;Herr Braun;102
+3A;Montag;11:30;Informatik;Herr Meier;Sporthalle
+3A;Montag;13:15;Mathe;Dmytro;201
+3A;Dienstag;10:40;Englisch;Frau Huber;309
+3A;Dienstag;11:30;Englisch;Frau Huber;101
+3A;Dienstag;13:15;Mathe;Dmytro;201
+3A;Mittwoch;09:50;Deutsch;Frau Keller;309
+3A;Mittwoch;10:40;Mathe;Herr Meier;101
+3A;Mittwoch;11:30;Deutsch;Frau Keller;928
+3A;Mittwoch;13:15;Deutsch;Frau Keller;201
+3A;Donnerstag;08:50;Englisch;Frau Keller;101
+3A;Donnerstag;09:50;Deutsch;Frau Keller;309
+3A;Donnerstag;10:40;Biologie;Herr Braun;Sporthalle
+3A;Freitag;08:50;Mathe;Herr Meier;928
+3A;Freitag;09:50;Informatik;Herr Meier;101
+3B;Montag;08:00;Deutsch;Frau Keller;102
+3B;Montag;08:50;Deutsch;Frau Keller;Sporthalle
+3B;Montag;09:50;Mathe;Herr Meier;101
+3B;Dienstag;08:00;Sport;Frau Huber;928
+3B;Dienstag;08:50;Englisch;Frau Huber;928
+3B;Dienstag;09:50;Englisch;Frau Huber;102
+3B;Mittwoch;08:00;Chemie;Herr Braun;101
+3B;Mittwoch;08:50;Deutsch;Frau Keller;201
+3B;Donnerstag;11:30;Deutsch;Frau Keller;309
+3B;Donnerstag;13:15;Mathe;Dmytro;101
+3B;Donnerstag;14:05;Sport;Frau Huber;101
+3B;Freitag;10:40;Mathe;Herr Meier;102
+3B;Freitag;11:30;Englisch;Frau Keller;201
+3B;Freitag;13:15;Chemie;Herr Braun;102
+D24a;Montag;14:05;Informatik;Fabarabadaba;102
+D24a;Dienstag;14:05;Informatik;Fabarabadaba;Sporthalle
+D24a;Mittwoch;14:05;Informatik;Fabarabadaba;102
+D24a;Donnerstag;08:00;Informatik;Herr Meier;201
+D24a;Donnerstag;08:50;Informatik;Herr Meier;928
+D24a;Freitag;14:05;Informatik;Fabarabadaba;102
