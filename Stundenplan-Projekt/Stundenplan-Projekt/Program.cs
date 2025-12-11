@@ -13,12 +13,15 @@ namespace Stundenplan_Projekt
         // Der Pfad zur Datei, in der wir Lehrer, Räume und Klassen speichern
         static string datenPfad = "stammdaten.json";
 
-        // NEU: Wir nutzen ein Interface zum Speichern/Laden
+        // Wir nutzen ein Interface zum Speichern/Laden
         static IPersistenceService speicherService = new JsonPersistenceService();
 
         static void Main(string[] args)
         {
             SchulDaten daten;
+
+            // Wir bereiten den Excel-Exporter vor
+            IScheduleExporter exporter = new CsvExporter();
 
             // Zuerst versuchen wir, vorhandene Daten zu laden (über den Service)
             daten = speicherService.LoadSchulDaten(datenPfad);
@@ -47,7 +50,8 @@ namespace Stundenplan_Projekt
                 Console.WriteLine("2. Neuen LEHRER anlegen");
                 Console.WriteLine("3. Neuen RAUM anlegen");
                 Console.WriteLine("4. Neue KLASSE anlegen");
-                Console.WriteLine("5. Beenden");
+                Console.WriteLine("5. EXPORTIEREN (Excel/CSV)");
+                Console.WriteLine("6. Beenden");
                 Console.Write("\nAuswahl: ");
 
                 string wahl = Console.ReadLine();
@@ -69,6 +73,10 @@ namespace Stundenplan_Projekt
                     NeueKlasse(daten);
                 }
                 else if (wahl == "5")
+                {
+                    ExportiereDaten(exporter);
+                }
+                else if (wahl == "6")
                 {
                     break;
                 }
@@ -215,11 +223,47 @@ namespace Stundenplan_Projekt
                 Console.WriteLine(e.Tag + " " + e.ZeitVon + " : " + e.Fach + " (" + e.Lehrer + ", " + e.Raum + ")");
             }
 
-            // NEU: Speichern über den Service
+            // Speichern über den Service
             speicherService.SaveStundenplan(plan.Eintraege, "stundenplan_ergebnis.json");
             Console.WriteLine("Gespeichert in: stundenplan_ergebnis.json");
 
             Console.WriteLine("\nFertig. Taste drücken.");
+            Console.ReadKey();
+        }
+
+        /// <summary>
+        /// Lädt den letzten Stundenplan und exportiert ihn als Excel-CSV.
+        /// </summary>
+        static void ExportiereDaten(IScheduleExporter exporter)
+        {
+            Console.Clear();
+            Console.WriteLine("=== EXPORT ===");
+
+            // Wir prüfen, ob überhaupt schon ein Plan berechnet wurde
+            if (!File.Exists("stundenplan_ergebnis.json"))
+            {
+                Console.WriteLine("Fehler: Bitte generieren Sie erst einen Stundenplan (Menü 1).");
+                Console.ReadKey();
+                return;
+            }
+
+            // Wir lesen die Ergebnis-Datei wieder ein
+            string json = File.ReadAllText("stundenplan_ergebnis.json");
+            List<StundenplanEintrag> plan = JsonConvert.DeserializeObject<List<StundenplanEintrag>>(json);
+
+            Console.Write("Dateiname für Export (z.B. meinPlan): ");
+            string dateiname = Console.ReadLine();
+
+            // Falls der Benutzer ".csv" vergisst, hängen wir es dran
+            if (!dateiname.EndsWith(".csv"))
+            {
+                dateiname += ".csv";
+            }
+
+            // Hier wird das Interface benutzt!
+            exporter.ExportierePlan(plan, dateiname);
+
+            Console.WriteLine("\nFertig! Sie können die Datei jetzt in Excel öffnen.");
             Console.ReadKey();
         }
 
