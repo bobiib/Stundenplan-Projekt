@@ -9,3 +9,14 @@ C:\Users\boris\Documents\IPT5.1 Projekt\Stundenplan-Projekt\Stundenplan-Projekt\
 C:\Users\boris\Documents\IPT5.1 Projekt\Stundenplan-Projekt\Stundenplan-Projekt\Stundenplan-Projekt\obj\Debug\Stundenplan-Projekt.exe
 C:\Users\boris\Documents\IPT5.1 Projekt\Stundenplan-Projekt\Stundenplan-Projekt\Stundenplan-Projekt\obj\Debug\Stundenplan-Projekt.pdb
 C:\Users\boris\Documents\IPT5.1 Projekt\Stundenplan-Projekt\Stundenplan-Projekt\Stundenplan-Projekt\obj\Debug\Stundenplan-Projekt.exe.config
+E:\GitHub\Stundenplan-Projekt\Stundenplan-Projekt\Stundenplan-Projekt\bin\Debug\Stundenplan-Projekt.exe.config
+E:\GitHub\Stundenplan-Projekt\Stundenplan-Projekt\Stundenplan-Projekt\bin\Debug\Stundenplan-Projekt.exe
+E:\GitHub\Stundenplan-Projekt\Stundenplan-Projekt\Stundenplan-Projekt\bin\Debug\Stundenplan-Projekt.pdb
+E:\GitHub\Stundenplan-Projekt\Stundenplan-Projekt\Stundenplan-Projekt\bin\Debug\Newtonsoft.Json.dll
+E:\GitHub\Stundenplan-Projekt\Stundenplan-Projekt\Stundenplan-Projekt\bin\Debug\Newtonsoft.Json.xml
+E:\GitHub\Stundenplan-Projekt\Stundenplan-Projekt\Stundenplan-Projekt\obj\Debug\Stundenplan-Projekt.csproj.AssemblyReference.cache
+E:\GitHub\Stundenplan-Projekt\Stundenplan-Projekt\Stundenplan-Projekt\obj\Debug\Stundenplan-Projekt.exe.config
+E:\GitHub\Stundenplan-Projekt\Stundenplan-Projekt\Stundenplan-Projekt\obj\Debug\Stundenplan-Projekt.csproj.CoreCompileInputs.cache
+E:\GitHub\Stundenplan-Projekt\Stundenplan-Projekt\Stundenplan-Projekt\obj\Debug\Stundenp.32040A91.Up2Date
+E:\GitHub\Stundenplan-Projekt\Stundenplan-Projekt\Stundenplan-Projekt\obj\Debug\Stundenplan-Projekt.exe
+E:\GitHub\Stundenplan-Projekt\Stundenplan-Projekt\Stundenplan-Projekt\obj\Debug\Stundenplan-Projekt.pdb

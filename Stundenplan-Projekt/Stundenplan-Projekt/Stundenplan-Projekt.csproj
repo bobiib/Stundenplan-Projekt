@@ -47,6 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JsonPersistenceService.cs" />
+    <Compile Include="IPersistenceService.cs" />
+    <Compile Include="StandardEvaluator.cs" />
+    <Compile Include="IScheduleEvaluator.cs" />
     <Compile Include="Einstellungen.cs" />
     <Compile Include="Fach.cs" />
     <Compile Include="KlassenStundenplan.cs" />

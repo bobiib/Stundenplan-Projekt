@@ -8,25 +8,28 @@ namespace Stundenplan_Projekt
     /// <summary>
     /// Die Hauptklasse, die das Menü anzeigt und die Benutzereingaben steuert.
     /// </summary>
-    public class Program
+    internal class Program
     {
         // Der Pfad zur Datei, in der wir Lehrer, Räume und Klassen speichern
         static string datenPfad = "stammdaten.json";
+
+        // NEU: Wir nutzen ein Interface zum Speichern/Laden
+        static IPersistenceService speicherService = new JsonPersistenceService();
 
         static void Main(string[] args)
         {
             SchulDaten daten;
 
-            // Zuerst prüfen wir, ob wir schon eine Datei auf der Festplatte haben
-            if (File.Exists(datenPfad))
+            // Zuerst versuchen wir, vorhandene Daten zu laden (über den Service)
+            daten = speicherService.LoadSchulDaten(datenPfad);
+
+            if (daten != null)
             {
                 Console.WriteLine("Lade vorhandene Daten aus " + datenPfad + "...");
-                string json = File.ReadAllText(datenPfad);
-                daten = JsonConvert.DeserializeObject<SchulDaten>(json);
             }
             else
             {
-                // Wenn nicht, dann erstellen wir die Testdaten neu
+                // Wenn nicht, erstellen wir die Testdaten neu
                 Console.WriteLine("Erste Nutzung: Erzeuge Testdaten...");
                 daten = ErzeugeTestDaten();
 
@@ -77,8 +80,8 @@ namespace Stundenplan_Projekt
         /// </summary>
         static void SpeicherDaten(SchulDaten daten)
         {
-            string json = JsonConvert.SerializeObject(daten, Formatting.Indented);
-            File.WriteAllText(datenPfad, json);
+            // Wir leiten das jetzt an den Service weiter
+            speicherService.SaveSchulDaten(daten, datenPfad);
         }
 
         /// <summary>
@@ -198,7 +201,7 @@ namespace Stundenplan_Projekt
             Stundenplan plan = new Stundenplan();
             Console.WriteLine("Berechne...");
 
-            // Hier nutzen wir die Daten die wir vorher geladen haben
+            // Hier nutzen wir die Daten, die wir vorher geladen haben
             plan.GenerierePlan(daten.KlassenNamen, daten.KlassenFaecher, daten.Lehrer, daten.Raeume, settings);
 
             string letzteKlasse = "";
@@ -212,14 +215,16 @@ namespace Stundenplan_Projekt
                 Console.WriteLine(e.Tag + " " + e.ZeitVon + " : " + e.Fach + " (" + e.Lehrer + ", " + e.Raum + ")");
             }
 
-            plan.SaveJson("stundenplan_ergebnis.json");
+            // NEU: Speichern über den Service
+            speicherService.SaveStundenplan(plan.Eintraege, "stundenplan_ergebnis.json");
+            Console.WriteLine("Gespeichert in: stundenplan_ergebnis.json");
 
             Console.WriteLine("\nFertig. Taste drücken.");
             Console.ReadKey();
         }
 
         /// <summary>
-        /// Erstellt die Start-Daten falls das Programm zum ersten Mal läuft.
+        /// Erstellt die Start-Daten, falls das Programm zum ersten Mal läuft.
         /// </summary>
         static SchulDaten ErzeugeTestDaten()
         {

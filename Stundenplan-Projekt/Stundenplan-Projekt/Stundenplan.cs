@@ -13,9 +13,26 @@ namespace Stundenplan_Projekt
     {
         public List<StundenplanEintrag> Eintraege = new List<StundenplanEintrag>();
 
+        // NEU: Wir nutzen jetzt das Interface für die Bewertung
+        private IScheduleEvaluator _evaluator;
+
         private string[] Tage = { "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag" };
         private string[] StartZeiten = { "08:00", "08:50", "09:50", "10:40", "11:30", "13:15", "14:05" };
         private string[] EndZeiten = { "08:45", "09:35", "10:35", "11:25", "12:15", "14:00", "14:50" };
+
+        public Stundenplan()
+        {
+            // Standardmäßig nutzen wir den normalen Evaluator
+            _evaluator = new StandardEvaluator();
+        }
+
+        /// <summary>
+        /// Ermöglicht das Austauschen der Bewertungslogik (z.B. für Tests mit Mock).
+        /// </summary>
+        public void SetEvaluator(IScheduleEvaluator evaluator)
+        {
+            _evaluator = evaluator;
+        }
 
         /// <summary>
         /// Versucht für alle Fächer passende Plätze zu finden.
@@ -91,8 +108,8 @@ namespace Stundenplan_Projekt
 
                             if (gewaehlterRaum == null) continue;
 
-                            // Punkte berechnen
-                            int strafPunkte = BerechnePunkte(klasse, tag, stundenIndex, settings);
+                            // Punkte berechnen (JETZT ÜBER DAS INTERFACE)
+                            int strafPunkte = _evaluator.BerechnePunkte(Eintraege, klasse, tag, stundenIndex, settings);
 
                             // Wenn das der beste Versuch bisher war, merken wir uns den
                             if (strafPunkte < wenigsteStrafpunkte)
@@ -127,6 +144,7 @@ namespace Stundenplan_Projekt
         }
 
         // WICHTIG: Diese Methoden müssen public sein für die Tests!
+
         public bool IstKlasseBesetzt(string klasse, string tag, int stunde)
         {
             foreach (StundenplanEintrag e in Eintraege)
@@ -156,50 +174,11 @@ namespace Stundenplan_Projekt
 
         /// <summary>
         /// Berechnet Strafpunkte für ungünstige Termine (Randstunden, Lücken, Raummangel).
+        /// HINWEIS: Leitet jetzt an das Interface weiter!
         /// </summary>
         public int BerechnePunkte(string klasse, string tag, int stunde, Planungseinstellungen settings)
         {
-            int punkte = 0;
-
-            // Randstunden bestrafen
-            if (stunde == 0 || stunde == 6)
-            {
-                punkte = punkte + settings.StrafeRandstunde;
-            }
-
-            // Zwischenstunden bestrafen
-            bool hatStundenAmTag = false;
-            bool hatAnschluss = false;
-
-            foreach (StundenplanEintrag e in Eintraege)
-            {
-                if (e.Klasse == klasse && e.Tag == tag)
-                {
-                    hatStundenAmTag = true;
-                    if (e.PeriodeIndex == stunde - 1 || e.PeriodeIndex == stunde + 1)
-                    {
-                        hatAnschluss = true;
-                    }
-                }
-            }
-
-            if (hatStundenAmTag == true && hatAnschluss == false)
-            {
-                punkte = punkte + settings.StrafeZwischenstunde;
-            }
-
-            // Ressourcen checken: Wie viele Räume werden parallel genutzt?
-            int anzahlParallel = 0;
-            foreach (StundenplanEintrag e in Eintraege)
-            {
-                if (e.Tag == tag && e.PeriodeIndex == stunde)
-                {
-                    anzahlParallel++;
-                }
-            }
-            punkte = punkte + (anzahlParallel * settings.StrafeRessourcen);
-
-            return punkte;
+            return _evaluator.BerechnePunkte(Eintraege, klasse, tag, stunde, settings);
         }
 
         private void SortiereListe()
