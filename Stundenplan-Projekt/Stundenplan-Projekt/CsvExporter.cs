@@ -6,31 +6,43 @@ using System.Text;
 namespace Stundenplan_Projekt
 {
     /// <summary>
-    /// Exportiert den Stundenplan als CSV-Datei für Excel.
+    /// Exportiert den Stundenplan als CSV-Datei für Excel (Optimiert).
     /// </summary>
     public class CsvExporter : IScheduleExporter
     {
         public void ExportierePlan(List<StundenplanEintrag> eintraege, string dateiPfad)
         {
-            // Wir nutzen StringBuilder für bessere Performance beim Text-Zusammenbauen
             StringBuilder csv = new StringBuilder();
 
-            // 1. Die Überschriften-Zeile schreiben
-            csv.AppendLine("Klasse;Tag;Stunde;Fach;Lehrer;Raum");
+            // 1: Dieser Befehl in der ersten Zeile sagt Excel: 
+            // "Benutze Semikolons als Trennzeichen"
+            // Dadurch öffnen sich die Spalten automatisch richtig.
+            csv.AppendLine("sep=;");
 
-            // 2. Alle Einträge durchgehen und als Zeile hinzufügen
+            // 2: Ein schöner Header mit Datum
+            csv.AppendLine("STUNDENPLAN EXPORT;;;;;");
+            csv.AppendLine($"Generiert am:;{DateTime.Now.ToString("dd.MM.yyyy HH:mm")};;;;");
+            csv.AppendLine(); // Eine Leerzeile für die Optik
+
+            // 3: Klare Überschriften
+            csv.AppendLine("Klasse;Wochentag;Uhrzeit;Fach;Lehrer;Raum");
+
             foreach (StundenplanEintrag e in eintraege)
             {
-                // Wir bauen eine Zeile: "3A;Montag;08:00;Mathe;Herr Meier;101"
-                string zeile = $"{e.Klasse};{e.Tag};{e.ZeitVon};{e.Fach};{e.Lehrer};{e.Raum}";
+                // 4: Wir fassen Start- und Endzeit zusammen (sieht besser aus)
+                string zeitSpalte = $"{e.ZeitVon} - {e.ZeitBis}";
+
+                // Zeile bauen
+                string zeile = $"{e.Klasse};{e.Tag};{zeitSpalte};{e.Fach};{e.Lehrer};{e.Raum}";
 
                 csv.AppendLine(zeile);
             }
 
-            // 3. Datei speichern (Encoding.UTF8 ist wichtig für Umlaute wie 'ä')
-            File.WriteAllText(dateiPfad, csv.ToString(), Encoding.UTF8);
+            // 5: Encoding mit "Preamble" (BOM)
+            // Das sorgt dafür, dass Excel Umlaute (ä, ö, ü) auch wirklich richtig anzeigt.
+            File.WriteAllText(dateiPfad, csv.ToString(), new UTF8Encoding(true));
 
-            Console.WriteLine("Excel-Datei (CSV) erfolgreich erstellt: " + dateiPfad);
+            Console.WriteLine("Optimierte Excel-Datei erstellt: " + dateiPfad);
         }
     }
 }
